@@ -4,40 +4,91 @@
     <meta charset="UTF-8">
     <title>Școala Auto Garantat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background: #f4f4f4;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
         }
+
         header {
-            background: #0b3c5d;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 20px;
+            padding: 80px 20px;
             text-align: center;
         }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
         nav {
-            background: #328cc1;
-            padding: 10px;
+            background: #c40000;
+            padding: 12px;
             text-align: center;
         }
+
         nav a {
             color: white;
-            margin: 0 10px;
             text-decoration: none;
+            margin: 0 15px;
             font-weight: bold;
         }
+
         section {
-            padding: 20px;
             background: white;
-            margin: 20px;
-            border-radius: 5px;
+            margin: 30px auto;
+            padding: 30px;
+            max-width: 1000px;
+            border-radius: 6px;
         }
+
+        section h2 {
+            color: #c40000;
+            margin-bottom: 15px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 250px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
         footer {
-            background: #0b3c5d;
+            background: #222;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: #c40000;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -45,44 +96,65 @@
 
 <header>
     <h1>Școala Auto Garantat</h1>
-    <p>Instructori profesioniști • Promovare rapidă • Seriozitate</p>
+    <p>Permis auto rapid • Instructori profesioniști • Promovare garantată</p>
+    <a href="#contact" class="btn">Înscrie-te acum</a>
 </header>
 
 <nav>
     <a href="#despre">Despre noi</a>
-    <a href="#cursuri">Cursuri</a>
-    <a href="#preturi">Prețuri</a>
+    <a href="#servicii">Servicii</a>
+    <a href="#avantaje">Avantaje</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <section id="despre">
-    <h2>Despre noi</h2>
-    <p>Școala Auto Garantat oferă cursuri de conducere auto cu instructori calificați și mașini moderne.</p>
+    <h2>Despre Școala Auto Garantat</h2>
+    <p>
+        Școala Auto Garantat oferă cursuri de conducere auto categoria B,
+        cu instructori calificați și mașini moderne.
+        Ne concentrăm pe rezultate, seriozitate și pregătire reală pentru examen.
+    </p>
 </section>
 
-<section id="cursuri">
-    <h2>Cursuri</h2>
+<section id="servicii">
+    <h2>Serviciile noastre</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Categoria B</h3>
+            <p>Pregătire completă teoretică și practică.</p>
+        </div>
+        <div class="card">
+            <h3>Ore suplimentare</h3>
+            <p>Perfecționare pentru promovare sigură.</p>
+        </div>
+        <div class="card">
+            <h3>Instructor dedicat</h3>
+            <p>Răbdare, profesionalism și suport constant.</p>
+        </div>
+    </div>
+</section>
+
+<section id="avantaje">
+    <h2>De ce să ne alegi?</h2>
     <ul>
-        <li>Categoria B</li>
-        <li>Ore suplimentare</li>
-        <li>Pregătire teoretică</li>
+        <li>✔ Instructori profesionisti</li>
+        <li>✔ Program flexibil</li>
+        <li>✔ Mașini moderne</li>
+        <li>✔ Simulari de examen</li>
     </ul>
-</section>
-
-<section id="preturi">
-    <h2>Prețuri</h2>
-    <p>Pachet complet categoria B: <strong>XXXX lei</strong></p>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
-    <p>Telefon: 07xx xxx xxx</p>
-    <p>Email: contact@scoalaautogarantat.ro</p>
+    <p>📞 Telefon: <a href="tel:0765405600">0765 405 600</a></p>
+    <p>📧 Email: <a href="mailto:scoalaautogarantat@gmail.com">scoalaautogarantat@gmail.com</a></p>
+    <p>📍 Locație: Bucuresti-Ilfov</p>
 </section>
 
 <footer>
-    <p>© 2025 Școala Auto Garantat</p>
+    <p>© 2026 Școala Auto Garantat • Toate drepturile rezervate</p>
 </footer>
 
 </body>
 </html>
+
