@@ -1,200 +1,237 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <title>Scoala Auto Garantat</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Scoala Auto Garantat</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-        }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
 
-        header {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                        url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
+header {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
 
-        header h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-        }
+header h1 {
+  font-size: 42px;
+}
 
-        header p {
-            font-size: 20px;
-        }
+header p {
+  font-size: 20px;
+}
 
-        nav {
-            background: #c40000;
-            padding: 12px;
-            text-align: center;
-        }
+nav {
+  background: #c40000;
+  padding: 12px;
+  text-align: center;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
 
-        section {
-            background: white;
-            margin: 30px auto;
-            padding: 30px;
-            max-width: 1000px;
-            border-radius: 6px;
-        }
+section {
+  background: white;
+  margin: 30px auto;
+  padding: 30px;
+  max-width: 1000px;
+  border-radius: 6px;
+}
 
-        section h2 {
-            color: #c40000;
-            margin-bottom: 15px;
-        }
+section h2 {
+  color: #c40000;
+}
 
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-        .card {
-            flex: 1;
-            min-width: 250px;
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 5px;
-            text-align: center;
-        }
+.card {
+  flex: 1;
+  min-width: 250px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+}
 
-        footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+.review {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 20px;
-            background: #c40000;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-        }
-    </style>
+.review.special {
+  display: flex;
+  gap: 15px;
+  border-left: 5px solid #c40000;
+}
+
+.review img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #c40000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Scoala Auto Garantat</h1>
-    <p>Permis auto rapid • Instructori profesioniști • Promovare garantată</p>
-    <a href="#contact" class="btn">Înscrie-te acum</a>
+<h1>Scoala Auto Garantat</h1>
+<p>Permis auto rapid • Instructori profesioniști • Promovare garantată</p>
+<a href="#inscriere" class="btn">Înscrie-te acum</a>
 </header>
 
 <nav>
-    <a href="#despre">Despre noi</a>
-    <a href="#servicii">Servicii</a>
-    <a href="#avantaje">Avantaje</a>
-    <a href="#contact">Contact</a>
+<a href="#despre">Despre</a>
+<a href="#servicii">Servicii</a>
+<a href="#recenzii">Recenzii</a>
+<a href="#inscriere">Înscriere</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <section id="despre">
-    <h2>Despre Școala Auto Garantat</h2>
-    <p>
-        Scoala Auto Garantat oferă cursuri de conducere auto categoria B,
-        cu instructori calificați și mașini moderne.
-        Ne concentrăm pe rezultate, seriozitate și pregătire reală pentru examen.
-    </p>
+<h2>Despre noi</h2>
+<p>
+Scoala Auto Garantat oferă cursuri categoria B cu instructori profesioniști
+și mașini moderne. Ne concentrăm pe rezultate reale.
+</p>
 </section>
 
 <section id="servicii">
-    <h2>Serviciile noastre</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Categoria B</h3>
-            <p>Pregătire completă teoretică și practică.</p>
-        </div>
-        <div class="card">
-            <h3>Ore suplimentare</h3>
-            <p>Perfecționare pentru promovare sigură.</p>
-        </div>
-        <div class="card">
-            <h3>Instructor dedicat</h3>
-            <p>Răbdare, profesionalism și suport constant.</p>
-        </div>
-    </div>
+<h2>Serviciile noastre</h2>
+<div class="cards">
+  <div class="card">
+    <h3>Categoria B</h3>
+    <p>Pregătire completă teorie + practică.</p>
+  </div>
+  <div class="card">
+    <h3>Ore suplimentare</h3>
+    <p>Perfecționare și siguranță.</p>
+  </div>
+  <div class="card">
+    <h3>Instructor dedicat</h3>
+    <p>Răbdare și suport constant.</p>
+  </div>
+</div>
 </section>
 
-<section id="avantaje">
-    <h2>De ce să ne alegi?</h2>
-    <ul>
-        <li>✔ Instructori profesionisti</li>
-        <li>✔ Program flexibil</li>
-        <li>✔ Mașini moderne</li>
-        <li>✔ Simulari de examen</li>
-    </ul>
-</section>
-    <section>
-  <h2>Flota noastră de mașini</h2>
-  <img src="fl.jpeg" alt="Flota Scoala Auto Garantat" style="max-width:100%; border-radius:10px;">
+<section>
+<h2>Flota noastră</h2>
+<img src="fl.jpeg" alt="Flota Scoala Auto Garantat" style="width:100%;border-radius:10px;">
 </section>
 
+<section id="recenzii">
+<h2>Ce spun cursanții noștri</h2>
+
+<div class="review special">
+  <img src="david-popovici.jpg" alt="David Popovici">
+  <div>
+    ⭐⭐⭐⭐⭐
+    <p>„Instructori foarte profesioniști, explicații clare și multă răbdare.”</p>
+    <strong>David Popovici</strong>
+  </div>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>„Am luat permisul din prima. Recomand!”</p>
+<strong>– Andrei M.</strong>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>„Program flexibil și atmosferă plăcută.”</p>
+<strong>– Maria D.</strong>
+</div>
+</section>
+
+<section id="inscriere">
+<h2>Înscriere Scoala de Șoferi</h2>
+
+<form action="mailto:scoalaautogarantat@gmail.com" method="post" enctype="text/plain">
+  <label>Nume și prenume</label>
+  <input type="text" name="Nume" required>
+
+  <label>Număr de telefon</label>
+  <input type="tel" name="Telefon" required>
+
+  <label>Selectează serviciul</label>
+  <select name="Serviciu">
+    <option>Înscriere Școala de Șoferi</option>
+    <option>Ore Suplimentare</option>
+    <option>Alte Informații</option>
+  </select>
+
+  <button type="submit" class="btn">Trimite înscrierea</button>
+</form>
+</section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <p>📞 Telefon: <a href="tel:0765405600">0765 405 600</a></p>
-    <p>📧 Email: <a href="mailto:scoalaautogarantat@gmail.com">scoalaautogarantat@gmail.com</a></p>
-    <p>📍 Locație: Bucuresti-Ilfov</p>
-</section>
-<section>
-  <h2>Ce spun cursanții noștri</h2>
-
-  <div class="review special">
-    <img src="david-popovici.jpg" alt="David Popovici - cursant Scoala Auto Garantat">
-    <div>
-      <p>⭐⭐⭐⭐⭐</p>
-      <p>
-        „Instructori foarte profesioniști, explicații clare și multă răbdare.
-        Recomand Școala Auto Garantat cu toată încrederea.”
-      </p>
-      <strong>David Popovici</strong>
-         <div class="review">
-    ⭐⭐⭐⭐⭐
-    <p>„Instructori foarte răbdători și profesioniști. Am luat permisul din prima!”</p>
-    <strong>– Andrei M.</strong>
-  </div>
-
-  <div class="review">
-    ⭐⭐⭐⭐⭐
-    <p>„Program flexibil, mașini bune și explicații clare. Recomand cu încredere.”</p>
-    <strong>– Maria D.</strong>
-  </div>
-
-  <div class="review">
-    ⭐⭐⭐⭐⭐
-    <p>„Cea mai bună școală auto. Atmosferă plăcută și rezultate garantate.”</p>
-    <strong>– Ionuț P.</strong>
-  </div>
+<h2>Contact</h2>
+<p>📞 <a href="tel:0765405600">0765 405 600</a></p>
+<p>📧 scoalaautogarantat@gmail.com</p>
+<p>📍 București – Ilfov</p>
 </section>
 
-    </div>
-  </div>
-</section>
-
-    
 <footer>
-    <p>© 2026 Scoala Auto Garantat • Toate drepturile rezervate</p>
+<p>© 2026 Scoala Auto Garantat</p>
 </footer>
 
 </body>
 </html>
-
